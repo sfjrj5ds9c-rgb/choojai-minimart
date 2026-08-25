@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ชูใจ มินิมาร์ท - Choojai Minimart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --red-primary: #E52521;
+            --bg-body: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --text-main: #222222;
+            --text-muted: #666666;
+            --border-light: #EEEEEE;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Kanit', sans-serif; }
+        body { background-color: var(--bg-body); color: var(--text-main); line-height: 1.6; }
+
+        header { background: #FFFFFF; border-bottom: 1px solid var(--border-light); padding: 16px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+        .brand-logo { background: var(--red-primary); color: #FFF; font-size: 1.2rem; font-weight: 600; padding: 6px 18px; border-radius: 40px; text-decoration: none; }
+        nav a { margin-left: 20px; text-decoration: none; color: var(--text-main); font-size: 0.95rem; }
+        nav a:hover { color: var(--red-primary); }
+
+        .hero { background: #FFFFFF; text-align: center; padding: 50px 20px; border-bottom: 1px solid var(--border-light); }
+        .hero h1 { font-size: 2.2rem; font-weight: 600; color: var(--text-main); margin-bottom: 8px; }
+        .hero p { color: var(--text-muted); font-weight: 300; margin-bottom: 20px; }
+        .btn-main { background: var(--red-primary); color: #FFF; padding: 10px 28px; border-radius: 30px; text-decoration: none; font-size: 0.95rem; display: inline-block; }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        .section-title { font-size: 1.2rem; font-weight: 600; margin-bottom: 20px; border-left: 4px solid var(--red-primary); padding-left: 10px; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 40px; }
+        .card { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 12px; padding: 20px; text-align: center; }
+        .card-title { font-weight: 500; margin-top: 10px; }
+
+        .contact-box { background: #FFF; border: 1px solid var(--border-light); border-radius: 12px; padding: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .contact-item { margin-bottom: 10px; font-size: 0.95rem; color: var(--text-muted); }
+        .contact-item strong { color: var(--text-main); }
+
+        footer { background: #FFFFFF; border-top: 1px solid var(--border-light); padding: 20px; text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="brand-logo">ชูใจ มินิมาร์ท</a>
+        <nav>
+            <a href="#about">เกี่ยวกับเรา</a>
+            <a href="#products">สินค้า</a>
+            <a href="#contact">ติดต่อเรา</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="about">
+        <h1>ยินดีต้อนรับสู่ ชูใจ มินิมาร์ท</h1>
+        <p>สินค้าครบครัน ทันสมัย ใกล้บ้านคุณ ขายหน้าร้านและสั่งทางออนไลน์</p>
+        <a href="https://facebook.com/choojaiminimart" target="_blank" class="btn-main">ไปที่หน้า Facebook</a>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">หมวดหมู่สินค้า</h2>
+        <div class="grid">
+            <div class="card"><div class="card-title">ขนมขบเคี้ยว</div></div>
+            <div class="card"><div class="card-title">อาหารพร้อมทาน</div></div>
+            <div class="card"><div class="card-title">เครื่องปรุง / เครื่องดื่ม</div></div>
+            <div class="card"><div class="card-title">ของใช้ทั่วไป</div></div>
+        </div>
+
+        <h2 class="section-title" id="contact">ข้อมูลติดต่อ & หน้าร้าน</h2>
+        <div class="contact-box">
+            <div>
+                <div class="contact-item"><strong>เบอร์โทรศัพท์:</strong> 081-195-5265</div>
+                <div class="contact-item"><strong>อีเมล:</strong> choojaibiz@gmail.com</div>
+                <div class="contact-item"><strong>Facebook:</strong> ชูใจ มินิมาร์ท</div>
+                <div class="contact-item"><strong>บริการ:</strong> สินค้าครบครัน ทันสมัย ใกล้บ้านคุณ</div>
+            </div>
+            <div>
+                <div class="contact-item"><strong>ช่องทางสั่งซื้อออนไลน์:</strong></div>
+                <p style="font-size: 0.9rem; color: #666;">สามารถทักแชทสอบถามหรือสั่งซื้อสินค้าได้ผ่านทาง Facebook Page ชูใจ มินิมาร์ท ได้โดยตรง</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 ชูใจ มินิมาร์ท (Choojai Minimart) - All Rights Reserved.
+    </footer>
+
+</body>
+</html>
